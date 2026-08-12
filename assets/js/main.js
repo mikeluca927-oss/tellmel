@@ -15,7 +15,7 @@
    Happinessandclarity@tell-mel.com, and paste the endpoint it
    gives you below (looks like https://formspree.io/f/abcdwxyz).
 --------------------------------------------------------- */
-const FORM_ENDPOINT = ""; // e.g. "https://formspree.io/f/xxxxxxxx"
+const FORM_ENDPOINT = "https://formspree.io/f/xyegjdwp";
 const CONTACT_EMAIL = "Happinessandclarity@tell-mel.com";
 
 document.addEventListener("DOMContentLoaded", () => {
