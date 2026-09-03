@@ -492,7 +492,7 @@ p { margin: 0 0 1.1em; }
   padding: 5px 14px; border-radius: 999px;
 }
 .price h3 { color: var(--wine); margin-bottom: .3em; }
-.price .amt { font-family: var(--serif); font-size: 2.5rem; color: var(--plum); line-height: 1; margin: 6px 0 2px; }
+.price .amt { font-family: var(--serif); font-size: 2.5rem; color: var(--plum); line-height: 1; margin: 6px 0 10px; }
 .price .amt small { font-size: .9rem; color: var(--ink-soft); font-family: var(--sans); font-weight: 700; }
 .price .fmt { font-size: .84rem; color: var(--rose-deep); font-weight: 800; text-transform: uppercase; letter-spacing: .08em; margin-bottom: 14px; }
 .price p { font-size: .98rem; color: var(--ink-soft); }
