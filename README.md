@@ -12,7 +12,6 @@ drag the whole folder onto any host.
 | `stories.html` | Client stories |
 | `faq.html` | FAQ |
 | `pricing.html` | Packages + "request a call about pricing" form (no checkout) |
-| `free-session.html` | Free group session signup form + "Don't go alone" share section |
 | `assets/` | Styles, scripts, images, and the new phoenix logo (`assets/img/phoenix.svg`) |
 
 ## The forms (important)
@@ -32,11 +31,6 @@ filled in, addressed to **Happinessandclarity@tell-mel.com**. That works with ze
    paste your endpoint between the quotes and save.
 
 Both forms already include a **Who referred you?** field so you can track word-of-mouth.
-
-## The free group session
-
-The date is written on `index.html` and `free-session.html` as **Thursday, September 3rd,
-7:00 PM EST**. To change it, edit that text on those two pages (search for "September 3rd").
 
 ## Publishing it
 

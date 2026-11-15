@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
   setupNav();
   setupReveal();
   setupForms();
-  setupShare();
   const y = document.querySelector("[data-year]");
   if (y) y.textContent = "2026";
 });
@@ -116,37 +115,3 @@ function mailtoFallback(form, data) {
   window.location.href = href;
 }
 
-/* Share buttons + copy link */
-function setupShare() {
-  const shareData = {
-    title: "Tell Mel Free Group Session",
-    text: "Do not go alone, come find your people. I'm joining Mel's FREE group coaching session. Grab a seat with me.",
-    url: (document.querySelector("[data-share-url]") || {}).dataset
-      ? document.querySelector("[data-share-url]").dataset.shareUrl
-      : window.location.href,
-  };
-
-  document.querySelectorAll("[data-share=native]").forEach((btn) => {
-    btn.addEventListener("click", async () => {
-      if (navigator.share) {
-        try { await navigator.share(shareData); } catch (_) {}
-      } else {
-        copyLink(shareData.url);
-      }
-    });
-  });
-
-  document.querySelectorAll("[data-copy]").forEach((btn) => {
-    btn.addEventListener("click", () => copyLink(btn.dataset.copy || shareData.url, btn));
-  });
-}
-
-function copyLink(url, btn) {
-  navigator.clipboard?.writeText(url).then(() => {
-    if (btn) {
-      const original = btn.innerHTML;
-      btn.innerHTML = "Copied!";
-      setTimeout(() => (btn.innerHTML = original), 1800);
-    }
-  });
-}

@@ -1,4 +1,7 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/free-session", "destination": "/pricing#request", "permanent": true }
+  ]
 }
